@@ -8,12 +8,10 @@
        <title>Edwin Waweru</title>
        <link rel="stylesheet" href="{% static 'myportfolio/css/style.css' %}">
        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-       
-
 </head>
 <body>
         <header class="header">
-              <a href="#" class="logo">Edwin .</a>
+              <a href="#" class="logo">Edwin Waweru .</a>
 
               <nav class="navbar">
                      <a href="#" class="active">Home</a>
@@ -25,30 +23,39 @@
         </header>
         <section class="home">
               <div class="section">
-                     <div class = "home-content">
+                     <div class="home-content">
                             <h2>Hello , Its Me</h2>
                             <h1>Edwin Waweru</h1>
                             <h3>And I'm a <span>Software Engineer</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum delectus inventore magnam repellat consectetur dolores cum. Laboriosam nulla doloribus placeat delectus amet, accusantium, ipsa, sequi non recusandae atque voluptatum? </p>
+                            <p>Meet Edwin Waweru Gathoni, a seasoned software engineer specializing in backend development with a knack for frontend finesse. An alum of the esteemed ALX Software Engineering course, Edwin brings a wealth of expertise forged through a background in Information Technology (I.T) and cybersecurity. With a passion for crafting robust systems and intuitive user experiences, Edwin is dedicated to delivering innovative solutions that empower businesses and elevate digital experiences. Explore Edwin's world of software wizardry and discover how his skills can turn your digital dreams into reality.</p>
                             <div class="btn-box">
                                    <a href="#" class="hire-me">Hire Me</a>
                                    <a href="#" class="lets-talk">Let's talk</a>
                             </div>
                      </div>
-              
               </div>
-       </div>
               <div class="home-image">
                      <img src="{% static 'myportfolio/images/home.jpg' %}" alt="Home Image">
               </div>
-
               <div class="home-sci">
-                     <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                     <a href="#"><i class='bx bxl-github' ></i></a>
-                     <a href="#"><i class='bx bxl-gmail'></i></a>
-                     <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-
+                     <a href="https://www.linkedin.com/in/edwinwaweru/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                     <a href="https://github.com/waweruedwin8" target="_blank"><i class='bx bxl-github'></i></a>
+                     <a href="#" onclick="sendEmail(event)"><i class='bx bxl-gmail'></i></a>
+                     <a href="https://wa.me/254799030603" target="_blank"><i class='bx bxl-whatsapp'></i></a>
               </div>
         </section>
+        <script>
+            function sendEmail(event) {
+                event.preventDefault();  // Prevent default action of the link
+
+                var emailAddress = "waweruedwin8@gmail.com";
+                var subject = "Subject";
+                var body = "Message goes here";
+
+                var gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(emailAddress);
+
+                window.open(gmailLink, "_blank");
+            }
+        </script>
 </body>
 </html>
