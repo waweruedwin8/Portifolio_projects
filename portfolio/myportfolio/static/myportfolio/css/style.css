@@ -452,3 +452,44 @@ span{
 
 /* Services*/
 
+.services h2{
+       margin: 5rem;
+       color: #ededed;
+
+}
+.services-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 2rem;
+}
+.services-container .services-box{
+       flex:1 1 30rem;
+       background-color:#323946;
+       padding: 3rem 2rem 4rem;
+       border-radius: 2rem;
+       text-align: center;
+       border: .2rem solid #1F2937;
+       transition: .5s ease;
+
+}
+.services-container .services-box:hover{
+       border-color: #00abf0;
+       transform: scale(1.02);
+
+}
+.services-box i{
+       font-size: 7rem;
+       color: #00abf0;
+
+}
+.services-box h3{
+       font-size: 2.6rem;
+       color: #ededed;
+}
+.services-box p{
+       font-size: 1.6rem;
+       margin: 1rem 0 3rem;
+       color: #ededed;
+}
