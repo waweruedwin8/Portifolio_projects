@@ -20,6 +20,11 @@
        font-family: 'Poppins', 'sans-serif';
 }
 
+:root{
+       --bg-color:#1f242d;
+       --second-bg-color:#323946;
+}
+
 body{
        background:#1F2937;
 }
@@ -385,3 +390,65 @@ body{
        width: 100%;
 
 }
+
+
+/* about section*/
+
+.about{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+       background: /*var(--second-bg-color)*/ #1F2937;    
+       background:#323946;
+}
+.about-img img{
+       width: 40vw;
+
+}
+.heading{
+       text-align: center;
+       font-size: 4.5rem;    
+}
+.about-content h2{
+       text-align: left;
+       line-height: 1.2;
+       color: #ededed;
+}
+span{
+       color: #00abf0;
+}
+.about-content h3{
+       font-size: 2.6rem;
+       color: #ededed;
+
+}
+.about-content p{
+       color: #ededed;
+       font-size: 1.6rem;
+       margin: 2rem 0 3rem;
+}
+.btn-box {
+       margin-top: 20px; /* Top margin */
+}
+   
+.btn-box .read-more {
+       display: inline-block; /* Make it inline-block to wrap content */
+       padding: 12px 24px; /* Adjust padding as needed */
+       background-color: #00abf0; /* Button background color */
+       color: #1F2937; /* Button text color */
+       border: 2px solid #00abf0; /* Button border */
+       border-radius: 8px; /* Rounded corners */
+       font-weight: 600; /* Button font weight */
+       text-decoration: none; /* Remove underline from link */
+       transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+       text-align: center;
+}
+   
+.btn-box .read-more:hover {
+       background-color: transparent; /* Change background on hover */
+       color: #00abf0; /* Change text color on hover */
+}
+
+/* Services*/
+
